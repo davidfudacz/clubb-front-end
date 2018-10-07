@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #eeeeee
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1em;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+.reviewContent p {
+  text-indent: 15px;
+}
+
+.reviewPreview {
+  position: relative;
+}
+
+.reviewPreview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: -webkit-linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -moz-linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -o-linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+  background-image: linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -ms-linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+}
