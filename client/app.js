@@ -17,7 +17,7 @@ const App = () => {
       <Navbar />
       <div className="contentWrapper" style={ contentWrapperStyle } >
         <Routes />
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
     </div>
   )

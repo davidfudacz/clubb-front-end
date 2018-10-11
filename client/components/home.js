@@ -39,11 +39,11 @@ export const Home = ({ selectedCourseScorecards }) => {
 
   return (
     <div className="mainColumn" style={ mainColumnStyle }>
-      <AllReviewsList />
+      {/* <AllReviewsList /> */}
       <CourseNameMainHeader />
-      <ImageGallery images={ images }/>
+      {/* <ImageGallery images={ images }/>
       <ReviewMain />
-      <ScorecardsViewer scorecards={ selectedCourseScorecards } />
+      <ScorecardsViewer scorecards={ selectedCourseScorecards } /> */}
     </div>
   )
 }
