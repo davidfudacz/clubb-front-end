@@ -4,14 +4,8 @@ import { withRouter, Route, Switch } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Login, Signup, Home } from './components'
 import {
-  me,
-  getAllCourseRatingsFromServerThunkerator,
   getSelectedCourseFromClubbApiThunkerator,
   getSelectedCourseBuildsFromClubbApiThunkerator,
-  getSelectedCourseReviewFromServerThunkerator,
-  getSelectedCourseScorecardsFromClubbApiThunkerator,
-  getSelectedCourseMembershipTypeFromClubbApiThunkerator,
-  getAllReviewsFromServerThunkerator,
 } from './store'
 
 /**
@@ -56,14 +50,8 @@ const mapState = state => {
 const mapDispatch = dispatch => {
   return {
     loadInitialData() {
-      dispatch(me())
-      dispatch(getAllCourseRatingsFromServerThunkerator())
       dispatch(getSelectedCourseFromClubbApiThunkerator(2))
       dispatch(getSelectedCourseBuildsFromClubbApiThunkerator(2))
-      dispatch(getSelectedCourseReviewFromServerThunkerator(2))
-      dispatch(getSelectedCourseScorecardsFromClubbApiThunkerator(2))
-      dispatch(getSelectedCourseMembershipTypeFromClubbApiThunkerator(2))
-      dispatch(getAllReviewsFromServerThunkerator())
     }
   }
 }
