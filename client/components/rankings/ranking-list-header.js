@@ -22,8 +22,8 @@ const headerSubtextStyle = {
 
 const RankingListHeader = ({ parsedName, publisherName }) => (
   <div style = {{ marginBottom: '15px' }}>
-    <div style={ headerStyle }>{ parsedName }</div>
-    <div style={ headerSubtextStyle }>{ publisherName }</div>
+    <div className='rankingListHeader' style={ headerStyle }>{ parsedName }</div>
+    <div className='rankingListHeaderSubtext' style={ headerSubtextStyle }>{ publisherName }</div>
   </div>
 )
 
